@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
+import { basePath } from '@/const';
 
 const roboto = Roboto({
   subsets: ['cyrillic', 'latin'],
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       <head>
-        <link rel='icon' type='image/svg+xml' href='/pognali.svg' />
+        <link rel='icon' type='image/svg+xml' href={`${basePath}/pognali.svg`}/>
       </head>
       <body className={roboto.className}>{children}</body>
     </html>
