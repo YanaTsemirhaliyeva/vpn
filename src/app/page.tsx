@@ -1,21 +1,19 @@
-import styles from './page.module.scss';
-import Link from 'next/link'
+import Benefits from '@/components/benefits/Benefits'
+import ChooseName from '@/components/choose-name/ChooseName'
+import Intro from '@/components/intro/Intro'
+
+import container from '../styles/container.module.scss'
+import styles from './page.module.scss'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Link
-        className={styles['main__page-link']}
-        href={'/fellow-travelers'}
-      >
-        Попутчики
-      </Link>
-      <Link
-        href={'/form'}
-        className={styles['main__page-link']}
-      >
-        Форма
-      </Link>
-    </main>
-  );
+    <div className={`${styles.main} ${container['main-container']}`}>
+      <Intro />
+      <div>
+        <Benefits />
+        <p className={styles.text}>Millions of people trust us!</p>
+      </div>
+      <ChooseName />
+    </div>
+  )
 }

@@ -1,0 +1,123 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-default-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  transform: scale(0);
+
+  @include vp-1023 {
+    z-index: 101;
+  }
+
+  &--active {
+    transform: scale(1);
+  }
+
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 124px 200px 124px 185px;
+
+    @include vp-1023 {
+      padding: 110px 30px 124px 15px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 194px;
+
+    @include vp-767 {
+      background-color: $color-default-white;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 0;
+    border-bottom: 1px solid #F8F8F8;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 16px 0;
+    border-bottom: 1px solid #F8F8F8;
+    margin-bottom: 16px;
+  }
+
+  &__input input {
+    padding: 13px 16px 19px;
+    border: 1px solid #646464;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  &__policy {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #646464;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $color-default-white;
+    background-color: $color-pumpkin;
+    padding: 17px 14px 15px;
+    border-radius: 16px;
+    width: 100%;
+    border: none;
+  }
+
+  &__close {
+    position: absolute;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    top: -34px;
+    right: -6px;
+    border: none;
+    background-color: transparent;
+  }
+
+}

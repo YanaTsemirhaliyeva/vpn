@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# extra
+.idea
+.vscode
+.nvmrc
+*.ai
+*.psd
+*.sublime*
+Thumbs.db

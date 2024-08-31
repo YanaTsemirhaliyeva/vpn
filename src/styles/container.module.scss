@@ -2,20 +2,13 @@
 
 .main-container {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 194px;
 
-  @include vp-1279 {
-    padding: 0 24px;
-  }
 
   @include vp-1023 {
-    padding: 0 16px;
-  }
-
-  @include vp-767 {
     padding: 0;
-    min-width: 320px;
+    min-width: 428px;
   }
 }

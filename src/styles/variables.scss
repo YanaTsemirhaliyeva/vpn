@@ -18,40 +18,21 @@ $vp-1920: 1920px;
 
 // Default
 
-$color-default-black: #000000;
-$color-default-white: #ffffff;
-$color-transparent: rgba(255, 255, 255, 0.1);
-$color-transparent-2: rgba(255, 255, 255, 0.3);
-$color-transparent-black: rgba(0, 0, 0, 0.5);
+$color-default-black:              #000000;
+$color-default-white:              #ffffff;
+$color-transparent:                rgba(255, 255, 255, 0.1);
+$color-transparent-2:              rgba(255, 255, 255, 0.3);
+$color-transparent-black:          rgba(0, 0, 0, 0.14);
+$color-transparent-black-2:        rgba(0, 0, 0, 0.25);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-dodger-blue: #0380ea;
-$color-lavender: #e8e8e9;
-$color-black-pearl: #161c24;
-$color-raven: #73777c;
-$color-deep-lilac: #8f5db7;
-$color-malachite: #25d366;
-$color-summer-sky: #39aee9;
-$color-snow: #f9f9f9;
-$color-nordic: #0c343d;
-$color-bright-grey: #4b525c;
-$color-primary-100: #0380ea;
-$color-back-10: #e8e8e9;
-$color-tuna: #444a50;
-$color-white-smoke: #f6f6f6;
-$color-midnight-express: #0d113c;
-$color-navy-blue: #0266bb;
-$color-summer-sky-2:  #339dd2;
-$color-medium-sea-green: #21be5c;
-$color-studio: #8154a5;
-$color-whisper: #e9e9e9;
-$color-heather: #b9bbbd;
-$color-zumthor: #D0D2D3;
-$color-tuna: #444a50;
-$color-dodger-blue: #2684fc;
-;
+$color-night-rider:                #2b2b2b;
+$color-royal-blue:                 #3177f2;
+$color-pumpkin:                    #ff5d17;
+$color-dim-gray:                   #646464;
+
 
 // Gradient
 

@@ -1,0 +1,3 @@
+src/app/globals.scss
+src/styles/variables.scss
+src/hook/use-scroll-lock.tsx

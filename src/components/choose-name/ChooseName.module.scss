@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.choose-name {
+  position: relative;
+  padding-top: 72px;
+  width: 100%;
+
+  @include vp-1023 {
+    padding-top: 40px;
+    padding: 40px 15px 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    &--color {
+      color: $color-royal-blue;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    box-shadow: 0 2px 11px 0 $color-transparent-black-2;
+    border-radius: 16px;
+    padding: 31px 10px;
+    user-select: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

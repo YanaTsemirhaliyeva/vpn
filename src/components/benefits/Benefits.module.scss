@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding: 0 6px;
+  column-gap: 32px;
+  row-gap: 8px;
+  margin-bottom: 72px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 38px;
+  }
+
+  &__item {
+    padding: 16px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    border-top: 1px solid $color-dim-gray;
+
+    @include vp-1023 {
+      padding: 16px 0 2px;
+      gap: 14px;
+    }
+
+    &:nth-last-child(-n+2) {
+      border-bottom: 1px solid $color-dim-gray;
+
+      @include vp-1023 {
+        border-bottom: none;
+      }
+    }
+
+    &:last-child {
+
+      @include vp-1023 {
+        border-bottom: 1px solid $color-dim-gray;
+        padding: 16px 0;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--1 {
+      color: $color-pumpkin;
+    }
+
+    &--2 {
+      color: $color-royal-blue;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-dim-gray;
+  }
+}
